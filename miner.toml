@@ -5,4 +5,4 @@ address = "164.92.240.245:8998"
 public = "56p56dvxv0st621rvh3j723750prlz59f3telc63mx2gmb1q1y"
 
 [threads]
-count = -1
+count = 2
